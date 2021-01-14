@@ -1,0 +1,17 @@
+{
+  "name": "aws-node-rest-api-typescript-simple",
+  "description": "",
+  "version": "0.1.0",
+  "dependencies": {
+    "express": "^4.17.1",
+    "serverless-http": "^2.6.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.61",
+    "@types/express": "^4.17.11",
+    "@types/node": "^14.14.20",
+    "serverless": "^1.78.1",
+    "serverless-plugin-typescript": "^1.1.9",
+    "typescript": "^3.9.7"
+  }
+}

@@ -1,0 +1,16 @@
+service: aws-labs-typescript-plugin
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+functions:
+  app:
+    handler: handler.app
+    events:
+      - http:
+          path: /test
+          method: get
+
+plugins:
+  - serverless-plugin-typescript
