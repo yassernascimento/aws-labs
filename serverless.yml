@@ -1,4 +1,4 @@
-service: aws-labs-typescript-plugin
+service: aws-labs-express-typescript-plugin
 
 provider:
   name: aws
