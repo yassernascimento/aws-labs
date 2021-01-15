@@ -9,8 +9,8 @@ functions:
     handler: handler.app
     events:
       - http:
-          path: /test
-          method: get
+          path: /{proxy+}
+          method: any
 
 plugins:
   - serverless-plugin-typescript
