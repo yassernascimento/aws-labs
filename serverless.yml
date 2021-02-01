@@ -4,9 +4,13 @@ provider:
   name: aws
   runtime: nodejs12.x
 
+  layers:
+    - arn:aws:lambda:us-east-1:764866452798:layer:chrome-aws-lambda:22
+
 functions:
   app:
     handler: src/main.handler
+    timeout: 30
     events:
       - http:
           method: get
