@@ -1,0 +1,16 @@
+service: aws-labs-nest
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+functions:
+  app:
+    handler: src/main.handler
+    events:
+      - http:
+          method: get
+          path: /
+
+plugins:
+  - serverless-plugin-typescript
