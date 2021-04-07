@@ -1,4 +1,4 @@
-service: aws-labs-nest
+service: aws-labs-nest-webpack
 
 provider:
   name: aws
@@ -13,4 +13,8 @@ functions:
           path: /
 
 plugins:
-  - serverless-plugin-typescript
+  - serverless-webpack
+
+custom:
+  webpack:
+    webpackConfig: 'webpack.config.js'
